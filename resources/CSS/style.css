@@ -1,19 +1,22 @@
 html {
   font-size: 18px;
   font-family: Helvetica, sans-serif;
+  color: white;
 }
 
-.site-container {
-  max-width: 960px;
-  margin: 0 auto;
+.site-container,
+.title,
+.detail h4,
+.footer {
+  background-color: black;
 }
 
 .header {
+  max-width: 960px;
+  margin: 0 auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: black;
-  color: white;
 }
 
 .header img {
@@ -30,15 +33,21 @@ html {
 
 .main-image {
   display: block;
-  background-image: url("resources/images/moto.jpeg");
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
   height: 25rem;
   background-size: cover;
 }
 
+.box {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .text-box {
-  display: inline-block;
   background-color: black;
-  color: white;
   margin-top: 9rem;
   max-width: 20rem;
 }
@@ -61,7 +70,6 @@ html {
 
 nav {
   background-color: firebrick;
-  color: white;
 }
 
 nav ul {
@@ -70,19 +78,98 @@ nav ul {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.menu-button {
+  display: none;
+}
+
+.container,
+.copyright {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.items,
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+
 }
 
 .image-container {
-  margin-top: 3rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 960px;
+  width: 30%;
 }
 
-.image-container .images {
-  size: 9rem;
-  border: 4px solid black;
+.images {
   padding: 2rem 0;
+  border: 4px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+
+}
+
+.images img {
+  max-height: 8rem;
+}
+
+.title {
+  padding: 0.5rem 0;
+  display: block;
+  text-align: center;
+}
+
+.contacts {
+  display: flex;
+  align-items: space-between;
+}
+
+.detail {
+  width: 35%;
+}
+
+.detail h4 {
+  display: block;
+  padding: 1rem 2rem;
+}
+
+.detail p {
+  padding: 1rem 0;
+  color: black;
+}
+
+.copyright {
+  display: flex;
+  text-align: left;
+  height: 5rem;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+.text-box h2 {
+  font-size: 1.5rem;
+}
+
+.menu-button {
+  display: flex;
+}
+
+.nav ul {
+  display: none;
+}
+
+.image-container {
+  width: 47%;
+}
+}
+
+@media only screen and (max-width: 470px) {
 
 }
