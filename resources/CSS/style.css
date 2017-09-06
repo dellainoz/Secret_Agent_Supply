@@ -182,21 +182,57 @@ nav ul {
   width: 47%;
 }
 
-.image-container.glasses,
-.title.glasses {
+#glasses {
   display: none;
 }
 }
 
 @media only screen and (max-width: 470px) {
 
-.text-box p{
+.main-image {
+  height: 15rem;
+}
+
+.text-box {
+  margin: 10rem auto;
+}
+
+.text-box p {
   font-size: 0.77rem;
-  font-weight: bold;
+  padding-top: 1rem;
 }
 
 .text-box h2 {
   font-size: 1rem;
+}
+
+.text-box p,
+.text-box h2 {
+  padding-left: 2rem;
   font-weight: bold;
+}
+
+#watch {
+  display: none;
+}
+
+.image-container {
+  width: 90%;
+  margin: auto;
+}
+
+.contacts {
+  display: block;
+  justify-content: center;
+}
+
+.detail {
+  width: 90%;
+  margin-bottom: 0.5rem;
+  margin: auto;
+}
+
+.copyright {
+  justify-content: center;
 }
 }
