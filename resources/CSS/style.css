@@ -39,7 +39,7 @@ html {
 }
 
 .box {
-  max-width: 960px;
+  width: 960px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
@@ -49,7 +49,8 @@ html {
 .text-box {
   background-color: black;
   margin-top: 9rem;
-  max-width: 20rem;
+  width: 20rem;
+  width: 45%;
 }
 
 .text-box p {
@@ -193,8 +194,14 @@ nav ul {
   height: 15rem;
 }
 
+.box {
+  max-width: 470px;
+}
+
 .text-box {
   margin: 10rem 0;
+  width: 100%;
+  max-width: none;
 }
 
 .text-box p {
